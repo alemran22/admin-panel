@@ -3,16 +3,31 @@ import {
   GrPaint,
   HiOutlineBell,
   IoSunny,
+  LiaAngleLeftSolid,
   PiSquaresFour,
   RiMenu2Line,
 } from "../../../assets/icons";
-const TopBar = () => {
+const TopBar = ({
+  showMenuList,
+  setShowMenuList,
+}: {
+  showMenuList: boolean;
+  setShowMenuList: React.Dispatch<React.SetStateAction<boolean>>;
+}) => {
   return (
-    <div className="h-[60px] bg-white border-b border-[#CAD5E2] flex flex-row justify-between items-center px-16">
+    <div
+      className={`h-[60px] fixed bg-white/80 border-b border-[#CAD5E2] flex flex-row justify-between items-center px-16 ${
+        showMenuList ? "w-[calc(100%-320px)]" : "w-[calc(100%-80px)]"
+      }`}
+    >
       {/* left */}
-      <div className="">
-        <RiMenu2Line size={26} className="text-[#4F46E5]" />
-      </div>
+      <button onClick={() => setShowMenuList(!showMenuList)} className="">
+        {showMenuList ? (
+          <LiaAngleLeftSolid size={26} className="text-[#4F46E5]" />
+        ) : (
+          <RiMenu2Line size={26} className="text-[#4F46E5]" />
+        )}
+      </button>
       {/* right */}
       <div className="flex flex-row gap-4 items-center">
         {/* input field */}

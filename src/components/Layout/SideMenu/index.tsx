@@ -1,4 +1,4 @@
-import SideMenuData from "@/constant/SideMenuData";
+import SideMenuData from "@/constant/SideMenuData.constant";
 import { settings } from "../../../assets/icons";
 import { NavLink } from "react-router-dom";
 import { Tooltip } from "react-tooltip";

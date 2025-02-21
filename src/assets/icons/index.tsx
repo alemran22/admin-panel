@@ -12,6 +12,7 @@ import { IoSunny } from "react-icons/io5";
 import { GrPaint } from "react-icons/gr";
 import { PiSquaresFour } from "react-icons/pi";
 import { HiOutlineBell } from "react-icons/hi";
+import { LiaAngleLeftSolid } from "react-icons/lia";
 
 export {
   bag,
@@ -27,4 +28,5 @@ export {
   GrPaint,
   HiOutlineBell,
   PiSquaresFour,
+  LiaAngleLeftSolid,
 };
