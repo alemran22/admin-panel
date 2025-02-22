@@ -2,7 +2,7 @@ import { MainArea, MenuList, SideMenu, TopBar } from "@/components/Layout";
 import { useState } from "react";
 
 const Layout = () => {
-  const [showMenuList, setShowMenuList] = useState(true);
+  const [showMenuList, setShowMenuList] = useState(false);
   return (
     <div className=" h-screen w-full flex flex-row overflow-hidden">
       <SideMenu />
