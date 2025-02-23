@@ -167,7 +167,7 @@ const applicationMenuListData = [
   },
 ];
 
-const pagesMenuListData = [
+const pagesAndLayoutsMenuListData = [
   {
     group: 1,
     menu: [
@@ -410,7 +410,7 @@ const elementsMenuListData = [
 export {
   dashboardMenuListData,
   applicationMenuListData,
-  pagesMenuListData,
+  pagesAndLayoutsMenuListData,
   formsMenuListData,
   componentsMenuListData,
   elementsMenuListData,

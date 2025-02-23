@@ -20,7 +20,13 @@ import Meetings from "./meetings";
 import ProjectBoards from "./project boards";
 import WidgetContacts from "./WidgetContacts";
 import WidgetUI from "./WidgetContacts";
+
+const Dashboard = () => {
+  return <div>Dashboard</div>;
+};
+
 export {
+  Dashboard,
   CrmAnalytics,
   Orders,
   Cryptocurrency,

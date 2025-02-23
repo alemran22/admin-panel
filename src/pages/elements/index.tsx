@@ -15,7 +15,12 @@ import Tooltip from "./Tooltip";
 import Forms from "./Forms";
 import Typography from "./Typography";
 
+const Elements = () => {
+  return <div>Elements</div>;
+};
+
 export {
+  Elements,
   Avatar,
   Alert,
   Button,

@@ -10,7 +10,12 @@ import KanbanBoard from "./KanbanBoard";
 import JobsBoard from "./JobsBoard";
 import PosSystem from "./PosSystem";
 
+const Application = () => {
+  return <div className="text-center text-black text-5xl">Application</div>;
+};
+
 export {
+  Application,
   AiChatApp,
   ChatApp,
   FileManager,

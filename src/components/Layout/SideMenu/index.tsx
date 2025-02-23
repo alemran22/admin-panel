@@ -8,11 +8,13 @@ const SideMenu = () => {
       {/* top */}
       <div className=" ">
         <div className="p-1 rounded-md cursor-pointer">
-          <img
-            src="https://lineone.piniastudio.com/images/app-logo.svg"
-            alt=""
-            className="size-10 mt-2"
-          />
+          <NavLink to={"/dashboards"}>
+            <img
+              src="https://lineone.piniastudio.com/images/app-logo.svg"
+              alt=""
+              className="size-10 mt-2"
+            />
+          </NavLink>
         </div>
         <div className="flex flex-col gap-5 pt-6 items-center">
           {SideMenuData.map((menu) => (

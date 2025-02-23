@@ -20,7 +20,12 @@ import Clipboard from "./Clipboard";
 import Persist from "./Persist";
 import MonochromeMode from "./Monochrome mode";
 
+const Components = () => {
+  return <div>Components</div>;
+};
+
 export {
+  Components,
   Accordion,
   Collapse,
   Tab,
