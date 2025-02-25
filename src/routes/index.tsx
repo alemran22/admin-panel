@@ -18,88 +18,60 @@ const routes = createBrowserRouter([
     errorElement: <Error404V1 />,
     children: SideMenuData.map(({ path }) => ({
       path: path,
-      element: (
-        <h2 className="">
-          <Outlet />
-        </h2>
-      ),
+      element: <Outlet />,
       children:
         path === "/dashboards"
           ? dashboardMenuListData.map(({ menu }) => ({
               path: "",
-              element: (
-                <h1>
-                  <Outlet />
-                </h1>
-              ),
-              children: menu.map(({ path, title }) => ({
+              element: <Outlet />,
+              children: menu.map(({ path, element }) => ({
                 path: path,
-                element: <h2>{title}</h2>,
+                element: element(),
               })),
             }))
           : path === "/applications"
           ? applicationMenuListData.map(({ menu }) => ({
               path: "",
-              element: (
-                <h1>
-                  <Outlet />
-                </h1>
-              ),
-              children: menu.map(({ path, title }) => ({
+              element: <Outlet />,
+              children: menu.map(({ path, element }) => ({
                 path: path,
-                element: <h1 className="">{title}</h1>,
+                element: element(),
               })),
             }))
           : path === "/layouts"
           ? pagesAndLayoutsMenuListData.map(({ menu }) => ({
               path: "",
-              element: (
-                <h1>
-                  <Outlet />
-                </h1>
-              ),
+              element: <Outlet />,
               children: menu.map(({ path, title }) => ({
                 path: path,
-                element: <h1 className="">{title}</h1>,
+                element: <h2 className="">{title}</h2>,
               })),
             }))
           : path === "/forms"
           ? formsMenuListData.map(({ menu }) => ({
               path: "",
-              element: (
-                <h1>
-                  <Outlet />
-                </h1>
-              ),
-              children: menu.map(({ path, title }) => ({
+              element: <Outlet />,
+              children: menu.map(({ path, element }) => ({
                 path: path,
-                element: <h1 className="">{title}</h1>,
+                element: element(),
               })),
             }))
           : path === "/components"
           ? componentsMenuListData.map(({ menu }) => ({
               path: "",
-              element: (
-                <h1>
-                  <Outlet />
-                </h1>
-              ),
-              children: menu.map(({ path, title }) => ({
+              element: <Outlet />,
+              children: menu.map(({ path, element }) => ({
                 path: path,
-                element: <h1 className="">{title}</h1>,
+                element: element(),
               })),
             }))
           : path === "/elements"
           ? elementsMenuListData.map(({ menu }) => ({
               path: "",
-              element: (
-                <h1>
-                  <Outlet />
-                </h1>
-              ),
-              children: menu.map(({ path, title }) => ({
+              element: <Outlet />,
+              children: menu.map(({ path, element }) => ({
                 path: path,
-                element: <h1 className="">{title}</h1>,
+                element: element(),
               })),
             }))
           : [],

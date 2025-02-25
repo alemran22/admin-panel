@@ -11,6 +11,7 @@ import { useLocation } from "react-router-dom";
 
 const MenuList = ({ showMenuList }: { showMenuList: boolean }) => {
   const { pathname } = useLocation();
+  const pathBase = pathname.split("/")[1];
   return (
     <div
       className={
@@ -19,55 +20,75 @@ const MenuList = ({ showMenuList }: { showMenuList: boolean }) => {
           : "hidden"
       }
     >
-      {pathname === "/dashboards"
+      {pathBase === "dashboards"
         ? dashboardMenuListData.map(({ group, menu }) => (
-            <div key={group} className="border-b py-5">
-              {menu.map(({ id, path, title }) => (
-                <LinkItem key={id} path={`/dashboards/${path}`} title={title} />
-              ))}
-            </div>
-          ))
-        : pathname === "/applications"
-        ? applicationMenuListData.map(({ group, menu }) => (
             <div key={group} className="border-b py-5">
               {menu.map(({ id, path, title }) => (
                 <LinkItem
                   key={id}
-                  path={`/applications/${path}`}
+                  path={`/${pathBase}/${path}`}
                   title={title}
                 />
               ))}
             </div>
           ))
-        : pathname === "/layouts"
+        : pathBase === "applications"
+        ? applicationMenuListData.map(({ group, menu }) => (
+            <div key={group} className="border-b py-5">
+              {menu.map(({ id, path, title }) => (
+                <LinkItem
+                  key={id}
+                  path={`/${pathBase}/${path}`}
+                  title={title}
+                />
+              ))}
+            </div>
+          ))
+        : pathBase === "layouts"
         ? pagesAndLayoutsMenuListData.map(({ group, menu }) => (
             <div key={group} className="border-b py-5">
               {menu.map(({ id, path, title }) => (
-                <LinkItem key={id} path={`/layouts/${path}`} title={title} />
+                <LinkItem
+                  key={id}
+                  path={`/${pathBase}/${path}`}
+                  title={title}
+                />
               ))}
             </div>
           ))
-        : pathname === "/forms"
+        : pathBase === "forms"
         ? formsMenuListData.map(({ group, menu }) => (
             <div key={group} className="border-b py-5">
               {menu.map(({ id, path, title }) => (
-                <LinkItem key={id} path={`/forms/${path}`} title={title} />
+                <LinkItem
+                  key={id}
+                  path={`/${pathBase}/${path}`}
+                  title={title}
+                />
               ))}
             </div>
           ))
-        : pathname === "/components"
+        : pathBase === "components"
         ? componentsMenuListData.map(({ group, menu }) => (
             <div key={group} className="border-b py-5">
               {menu.map(({ id, path, title }) => (
-                <LinkItem key={id} path={`/components/${path}`} title={title} />
+                <LinkItem
+                  key={id}
+                  path={`/${pathBase}/${path}`}
+                  title={title}
+                />
               ))}
             </div>
           ))
-        : pathname === "/elements"
+        : pathBase === "elements"
         ? elementsMenuListData.map(({ group, menu }) => (
             <div key={group} className="border-b py-5">
               {menu.map(({ id, path, title }) => (
-                <LinkItem key={id} path={`/elements/${path}`} title={title} />
+                <LinkItem
+                  key={id}
+                  path={`/${pathBase}/${path}`}
+                  title={title}
+                />
               ))}
             </div>
           ))
