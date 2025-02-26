@@ -1,7 +1,11 @@
-import React from "react";
+import Avatar from "./Avatar";
 
 const Elements = () => {
-  return <div>Elements</div>;
+  return (
+    <div>
+      <Avatar />
+    </div>
+  );
 };
 
 export default Elements;
