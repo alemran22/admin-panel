@@ -1,6 +1,5 @@
 import { Breadcrumb } from "@/pages/elements";
 import { Outlet } from "react-router-dom";
-import Elements from "./Elements";
 
 const MainArea = () => {
   return (
@@ -10,7 +9,6 @@ const MainArea = () => {
       </div>
       <div className="bg-[#F8FAFC]">
         <Outlet />
-        <Elements />
       </div>
     </div>
   );

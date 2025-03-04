@@ -1,19 +1,21 @@
 import { avatarImagesData } from "@/assets/images/elements/avatar/rounded_avatar";
-import ToggleSwitch from "@/components/Common/ToggleSwitch";
+import ToggleButton from "@/components/ui/ToggleButton";
 import { useState } from "react";
 
-const SquircleAvatar: React.FC = () => {
-  const [isChecked, setIsChecked] = useState<boolean>(false);
-
-  const handleToggle = () => {
-    setIsChecked((prev) => !prev);
-  };
-
+const SquircleAvatar = () => {
+  const [showCode, setShowCode] = useState(true);
   return (
     <div className="bg-white py-2 px-6 rounded-md shadow-md">
       <div className="flex flex-row justify-between items-center my-3">
-        <h3 className="text-[#7A8493] text-xl font-semibold">Square Avatar</h3>
-        <ToggleSwitch isChecked={isChecked} onToggle={handleToggle} />
+        <h3 className="text-[#7A8493] text-xl font-semibold">
+          Squircle Avatar
+        </h3>
+        <div className="flex flex-row gap-3 items-center">
+          <div className="">
+            <p className="text-[#90A1B9] text-lg font-medium">Code</p>
+          </div>
+          <ToggleButton showCode={showCode} setShowCode={setShowCode} />
+        </div>
       </div>
       <div className="w-1/2">
         <p className="">

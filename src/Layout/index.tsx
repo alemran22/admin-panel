@@ -10,7 +10,7 @@ const Layout = () => {
         {/* menu list */}
         <MenuList showMenuList={showMenuList} />
         <section
-          className={` overflow-y-auto h-screen ${
+          className={`overflow-y-auto h-screen ${
             showMenuList ? "w-[calc(100%-240px)]" : "w-full"
           }`}
         >

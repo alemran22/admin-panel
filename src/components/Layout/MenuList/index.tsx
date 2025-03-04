@@ -16,7 +16,7 @@ const MenuList = ({ showMenuList }: { showMenuList: boolean }) => {
     <div
       className={
         showMenuList
-          ? "w-[240px] h-full border-r border-[#CAD5E2] px-4 py-6 "
+          ? "w-[240px] h-full border-r border-[#CAD5E2] px-4 py-6 bg-white"
           : "hidden"
       }
     >

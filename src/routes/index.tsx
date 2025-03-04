@@ -20,44 +20,8 @@ const routes = createBrowserRouter([
       path: path,
       element: <Outlet />,
       children:
-        path === "/dashboards"
+        path === ""
           ? dashboardMenuListData.map(({ menu }) => ({
-              path: "",
-              element: <Outlet />,
-              children: menu.map(({ path, element }) => ({
-                path: path,
-                element: element(),
-              })),
-            }))
-          : path === "/applications"
-          ? applicationMenuListData.map(({ menu }) => ({
-              path: "",
-              element: <Outlet />,
-              children: menu.map(({ path, element }) => ({
-                path: path,
-                element: element(),
-              })),
-            }))
-          : path === "/layouts"
-          ? pagesAndLayoutsMenuListData.map(({ menu }) => ({
-              path: "",
-              element: <Outlet />,
-              children: menu.map(({ path, title }) => ({
-                path: path,
-                element: <h2 className="">{title}</h2>,
-              })),
-            }))
-          : path === "/forms"
-          ? formsMenuListData.map(({ menu }) => ({
-              path: "",
-              element: <Outlet />,
-              children: menu.map(({ path, element }) => ({
-                path: path,
-                element: element(),
-              })),
-            }))
-          : path === "/components"
-          ? componentsMenuListData.map(({ menu }) => ({
               path: "",
               element: <Outlet />,
               children: menu.map(({ path, element }) => ({
