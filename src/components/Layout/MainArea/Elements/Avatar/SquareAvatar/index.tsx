@@ -1,38 +1,57 @@
-import { avatarImagesData } from "@/assets/images/elements/avatar/rounded_avatar";
-import ToggleButton from "@/components/ui/ToggleButton";
-import { useState } from "react";
+import AvatarContainer from "@/components/ui/AvatarContainer";
 
 const SquareAvatar = () => {
-  const [showCode, setShowCode] = useState(true);
-  return (
-    <div className="bg-white py-2 px-6 rounded-md shadow-md">
-      <div className="flex flex-row justify-between items-center my-3">
-        <h3 className="text-[#7A8493] text-xl font-semibold">Square Avatar</h3>
-        <div className="flex flex-row gap-3 items-center">
-          <div className="">
-            <p className="text-[#90A1B9] text-lg font-medium">Code</p>
-          </div>
-          <ToggleButton showCode={showCode} setShowCode={setShowCode} />
-        </div>
-      </div>
-      <div className="w-1/2">
-        <p className="">
-          Avatars can have a square shape. To do this, you should use the
-          rounded-lg utility. Check out code for detail of usage.
-        </p>
-        <div className="flex flex-row items-end gap-3">
-          {avatarImagesData.map(({ id, image, size }) => (
-            <div key={id} className="my-6">
-              <img
-                src={image}
-                alt={`Avatar ${id}`}
-                className={`rounded-lg ${size}`}
-              />
-            </div>
-          ))}
-        </div>
-      </div>
+  const codeString = `
+  <div className="flex flex-row items-end gap-3">
+    <div className="">
+      <img
+        className="w-10 h-10 rounded-lg"
+        src="https:lineone.piniastudio.com/images/avatar/avatar-5.jpg"
+        alt=""
+      />
     </div>
+    <div className="">
+      <img
+        className="w-14 h-14 rounded-lg"
+        src="https://lineone.piniastudio.com/images/avatar/avatar-8.jpg"
+        alt=""
+      />
+    </div>
+    <div className="">
+      <img
+        className="w-16 h-16 rounded-lg"
+        src="https://lineone.piniastudio.com/images/avatar/avatar-19.jpg"
+        alt=""
+      />
+    </div>
+    <div className="">
+      <img
+        className="w-20 h-20 rounded-lg"
+        src="https://lineone.piniastudio.com/images/avatar/avatar-20.jpg"
+        alt=""
+      />
+    </div>
+    <div className="">
+      <img
+        className="w-24 h-24 rounded-lg"
+        src="https://lineone.piniastudio.com/images/avatar/avatar-10.jpg"
+        alt=""
+      />
+    </div>
+    <div className="">
+      <img
+        className="w-32 h-32 rounded-lg"
+        src="https://lineone.piniastudio.com/images/avatar/avatar-16.jpg"
+        alt=""
+      />
+    </div>
+  </div>`;
+  return (
+    <AvatarContainer
+      title="Square Avatar"
+      description="The Avatar component creates a scalable, colorable element that can have text, icon or image within its shape. Check out code for detail of usage."
+      codeString={codeString}
+    />
   );
 };
 
