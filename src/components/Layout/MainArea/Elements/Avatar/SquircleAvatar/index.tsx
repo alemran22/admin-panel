@@ -3,44 +3,44 @@ import AvatarContainer from "@/components/ui/AvatarContainer";
 const SquircleAvatar = () => {
   const codeString = `
     <div className="flex flex-row items-end gap-3">
-      <div className="">
+      <div className=" ">
         <img
-          className="w-10 h-10 rounded-full"
+          className="w-10 h-10 mask mask-squircle"
           src="https:lineone.piniastudio.com/images/avatar/avatar-5.jpg"
           alt=""
         />
       </div>
       <div className="">
         <img
-          className="w-14 h-14 rounded-full"
+          className="w-14 h-14 mask mask-squircle"
           src="https://lineone.piniastudio.com/images/avatar/avatar-8.jpg"
           alt=""
         />
       </div>
       <div className="">
         <img
-          className="w-16 h-16 rounded-full"
+          className="w-16 h-16 mask mask-squircle"
           src="https://lineone.piniastudio.com/images/avatar/avatar-19.jpg"
           alt=""
         />
       </div>
       <div className="">
         <img
-          className="w-20 h-20 rounded-full"
+          className="w-20 h-20 mask mask-squircle"
           src="https://lineone.piniastudio.com/images/avatar/avatar-20.jpg"
           alt=""
         />
       </div>
       <div className="">
         <img
-          className="w-24 h-24 rounded-full"
+          className="w-24 h-24 mask mask-squircle"
           src="https://lineone.piniastudio.com/images/avatar/avatar-10.jpg"
           alt=""
         />
       </div>
       <div className="">
         <img
-          className="w-32 h-32 rounded-full"
+          className="w-32 h-32 mask mask-squircle"
           src="https://lineone.piniastudio.com/images/avatar/avatar-16.jpg"
           alt=""
         />

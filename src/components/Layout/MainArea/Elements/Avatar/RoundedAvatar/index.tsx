@@ -6,7 +6,7 @@ const RoundedAvatar = () => {
     <div className="">
       <img
         className="w-10 h-10 rounded-full"
-        src="https:lineone.piniastudio.com/images/avatar/avatar-5.jpg"
+        src="https://lineone.piniastudio.com/images/avatar/avatar-5.jpg"
         alt=""
       />
     </div>

@@ -62,10 +62,12 @@ const AvatarContainer: React.FC<TAvatarContainer> = ({
           <SyntaxHighlighter
             language="javascript"
             style={monokaiSublime}
+            wrapLongLines={true}
             customStyle={{
               borderRadius: "0 0 8px 8px ",
               padding: "15px 8px",
               height: "400px",
+              width: "",
               overflow: "auto",
               marginBottom: "20px",
             }}
