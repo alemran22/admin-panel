@@ -1,5 +1,11 @@
+import Alerts from "@/components/Elements/Alerts";
+
 const Alert = () => {
-  return <div>Alert</div>;
+  return (
+    <div>
+      <Alerts />
+    </div>
+  );
 };
 
 export default Alert;

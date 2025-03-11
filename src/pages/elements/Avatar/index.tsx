@@ -1,4 +1,4 @@
-import Elements from "@/components/Layout/MainArea/Elements";
+import Elements from "@/components/Elements";
 const Avatar = () => {
   return (
     <div>
