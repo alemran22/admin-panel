@@ -2,7 +2,7 @@ import AlertContainer from "@/components/ui/AlertContainer";
 
 const BasicAlert = () => {
   const codeString = `
-    <div className="w-1/2 flex flex-col gap-3">
+    <div className="w-full flex flex-col gap-3">
       <div className="rounded-lg bg-slate-200 px-4 py-4 text-slate-600">
         This is simple Alert
       </div>

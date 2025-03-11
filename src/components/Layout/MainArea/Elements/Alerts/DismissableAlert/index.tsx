@@ -2,7 +2,7 @@ import AlertContainer from "@/components/ui/AlertContainer";
 
 const DismissableAlert = () => {
   const codeString = `
-    <div className="w-1/2 flex flex-col gap-3">
+     <div className="w-full flex flex-col gap-3">
       <div className="flex overflow-hidden rounded-lg border border-info text-info">
         <div className="bg-info p-3 text-white">
         <svg
