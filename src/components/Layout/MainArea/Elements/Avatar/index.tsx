@@ -1,3 +1,4 @@
+import { Alert } from "@/pages/elements";
 import AvatarWithDots from "./AvatarWithDots";
 import BorderedInitialAvatar from "./BorderedInitialAvatar";
 import GradientBorder from "./GradientBorder";
@@ -11,6 +12,7 @@ import SquareInitialAvatar from "./SquareInitialAvatar";
 import SquareSoftInitialAvatar from "./SquareSoftInitialAvatar";
 import SquircleAvatar from "./SquircleAvatar";
 import SquircleInitialAvatar from "./SquircleInitialAvatar";
+import Alerts from "../Alerts";
 
 const Avatar = () => {
   return (
@@ -28,6 +30,7 @@ const Avatar = () => {
       <SquircleAvatarDots />
       <InitialWithDots />
       <GradientBorder />
+      <Alerts />
     </div>
   );
 };
