@@ -1,6 +1,4 @@
 import {
-  applicationMenuListData,
-  componentsMenuListData,
   dashboardMenuListData,
   elementsMenuListData,
   formsMenuListData,

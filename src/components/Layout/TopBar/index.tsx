@@ -1,3 +1,4 @@
+import { MdFullscreen, MdFullscreenExit } from "react-icons/md";
 import {
   CiSearch,
   GrPaint,
@@ -7,12 +8,15 @@ import {
   PiSquaresFour,
   RiMenu2Line,
 } from "../../../assets/icons";
+import type { FullScreenHandle } from "react-full-screen";
 const TopBar = ({
   showMenuList,
   setShowMenuList,
+  handle,
 }: {
   showMenuList: boolean;
   setShowMenuList: React.Dispatch<React.SetStateAction<boolean>>;
+  handle: FullScreenHandle;
 }) => {
   return (
     <div
@@ -56,6 +60,16 @@ const TopBar = ({
           </button>
           <button className="hover:bg-[#E9EEF5] p-2 rounded-full">
             <PiSquaresFour size={24} />
+          </button>
+          <button
+            onClick={handle.active ? handle.exit : handle.enter}
+            className="hover:bg-[#E9EEF5] p-2 rounded-full"
+          >
+            {handle.active ? (
+              <MdFullscreenExit size={24} />
+            ) : (
+              <MdFullscreen size={24} />
+            )}
           </button>
         </div>
       </div>
