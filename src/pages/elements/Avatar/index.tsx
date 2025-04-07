@@ -1,8 +1,8 @@
-import Elements from "@/components/Elements";
+import Avatars from "@/components/Elements/Avatar";
 const Avatar = () => {
   return (
     <div>
-      <Elements />
+      <Avatars />
     </div>
   );
 };

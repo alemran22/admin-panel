@@ -14,7 +14,7 @@ import SquircleAvatar from "./SquircleAvatar";
 import SquircleInitialAvatar from "./SquircleInitialAvatar";
 import Alerts from "../Alerts";
 
-const Avatar = () => {
+const Avatars = () => {
   return (
     <div className="flex flex-col gap-8">
       <RoundedAvatar />
@@ -35,4 +35,4 @@ const Avatar = () => {
   );
 };
 
-export default Avatar;
+export default Avatars;

@@ -1,7 +1,13 @@
-import React from "react";
+import Buttons from "@/components/Elements/Buttons";
+import RoundedButton from "@/components/Elements/Buttons/RoundedButton";
 
-const Button = () => {
-  return <div>Button</div>;
+const ButtonPage = () => {
+  return (
+    <div className="flex flex-col gap-8">
+      <Buttons />
+      <RoundedButton />
+    </div>
+  );
 };
 
-export default Button;
+export default ButtonPage;
